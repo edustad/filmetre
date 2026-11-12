@@ -1,0 +1,250 @@
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Üst Menü (Navbar) */
+.navbar {
+  background-color: #1f1f1f;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #f5c518;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 800;
+  color: #f5c518;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-badge {
+  color: #cccccc;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+/* Butonlar */
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background-color: #f5c518;
+  color: #000000;
+}
+
+.btn-primary:hover {
+  background-color: #e2b616;
+}
+
+.btn-secondary {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.btn-secondary:hover {
+  background-color: #444444;
+}
+
+.btn-danger {
+  background-color: #e53935;
+  color: #ffffff;
+}
+
+.btn-danger:hover {
+  background-color: #c62828;
+}
+
+/* Ana İçerik Alanı */
+.main-content {
+  max-width: 900px;
+  width: 100%;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* Giriş / Kayıt Kartı */
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 85vh;
+}
+
+.card {
+  background-color: #1f1f1f;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  border: 1px solid #2e2e2e;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 400px;
+}
+
+.auth-tabs {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #333;
+}
+
+.auth-tab {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  color: #888;
+  font-weight: 600;
+}
+
+.auth-tab.active {
+  color: #f5c518;
+  border-bottom: 2px solid #f5c518;
+}
+
+/* Form Elemanları */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #cccccc;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background-color: #121212;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #f5c518;
+}
+
+/* Film Listesi */
+.section-title {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #f5c518;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movie-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.movie-item {
+  background-color: #1f1f1f;
+  padding: 16px 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #2e2e2e;
+  cursor: pointer;
+  transition: transform 0.15s, border-color 0.15s;
+}
+
+.movie-item:hover {
+  transform: translateY(-2px);
+  border-color: #f5c518;
+}
+
+.movie-rank {
+  font-size: 18px;
+  font-weight: bold;
+  color: #888;
+  margin-right: 15px;
+  min-width: 28px;
+}
+
+.movie-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.movie-meta {
+  font-size: 13px;
+  color: #999;
+  margin-top: 4px;
+}
+
+.score-badge {
+  background-color: #f5c518;
+  color: #000000;
+  font-weight: 800;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* Profil Sayfası Düzeni (Sol: İzlediklerim, Sağ: Film Ekle) */
+.profile-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 25px;
+}
+
+@media (max-width: 768px) {
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: #888;
+  background-color: #1f1f1f;
+  border-radius: 8px;
+  border: 1px dashed #444;
+}
+
+.msg-error {
+  background-color: rgba(229, 57, 53, 0.2);
+  color: #ff6b6b;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.msg-success {
+  background-color: rgba(67, 160, 71, 0.2);
+  color: #81c784;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
