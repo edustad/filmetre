@@ -2,6 +2,8 @@
 
 **Filmetre**, kullanıcıların üye olup izledikleri filmleri profillerine ekleyebildikleri, 1 ile 10 arasında puan verebildikleri ve tüm kullanıcıların verdiği puanların ortalamasıyla dinamik bir "Top Film Listesi" oluşturan modern bir web uygulamasıdır (SPA).
 
+🌐 Canlı Demo: [https://filmetre.vercel.app]
+
 ## 📸 Ekran Görüntüsü
 
 ![Filmetre Ekran Görüntüsü](./screenshot.png)
